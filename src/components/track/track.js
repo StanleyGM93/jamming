@@ -2,16 +2,22 @@ import React from "react";
 
 export class Track extends React.Component {
     renderAction() {
-        <button className='Track-action'>{isRemoval === true ? '-' : '+'}</button>
+        if (this.props.isRemoval) {
+            return <button className="Track-action">-</button>
+        } else {
+            return <button className="Track-action">+</button>
+        }
     }
 
     render() {
-        <div className="Track">
-            <div className="Track-information">
-                <h3><!-- track name will go here --></h3>
-                <p><!-- track artist will go here--> | <!-- track album will go here --></p>
+        return (
+            <div className="Track">
+                <div className="Track-information">
+                    <h3>track name</h3>
+                    <p>track artist | track album</p>
+                </div>
+                {this.renderAction()}
             </div>
-            <button className="Track-action"><!-- + or - will go here --></button>
-        </div>
+        )
     }
 }
