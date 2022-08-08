@@ -13,7 +13,7 @@ class App extends React.Component {
       searchResults: [],
       playlistName: 'My Playlist',
       playlistTracks: []
-    }
+    };
     this.addTrack = this.addTrack.bind(this);
     this.removeTrack = this.removeTrack.bind(this);
     this.updatePlaylistName = this.updatePlaylistName.bind(this);
@@ -28,7 +28,7 @@ class App extends React.Component {
     }
 
     tracks.push(track);
-    this.setState({playlistTracks: tracks})
+    this.setState({playlistTracks: tracks});
   }
 
   removeTrack(track) {

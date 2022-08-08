@@ -33,7 +33,7 @@ const Spotify = {
         .then(response => {
             return response.json()
         }).then(jsonResponse => {
-            if (!jsonResponse.tranks) {
+            if (!jsonResponse.tracks) {
                 return [];
             }
             return jsonResponse.tracks.items.map(track => ({
@@ -43,7 +43,7 @@ const Spotify = {
                 album: track.album.name,
                 uri: track.uri
             }));
-        })
+        });
     },
 
     savePlaylist(name, trackUris) {
@@ -54,6 +54,7 @@ const Spotify = {
         const accessToken = Spotify.getAccessToken();
         const headers = {Authorization: `Bearer ${accessToken}`}
         let userId;
+        
         const endpoint = 'https://api.spotify.com/v1/me'
         return fetch(`${endpoint}`, {headers: headers})
         .then(response => response.json())
@@ -78,11 +79,6 @@ const Spotify = {
             })
 
         })
-
-
-        
-
-
     }
 }
 
