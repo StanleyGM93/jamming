@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# Jammming
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Background
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). This was a portfolio project as part of the [Codecademy](https://codecademy.com/) full stack developer career path. It is a project to implement many of the skills that I have been learning. The React app allows users to query the spotify API for tracks, artists or albums and the user can add these to a playlist that they can name and save to their own spotify account. 
 
 ## Available Scripts
 
