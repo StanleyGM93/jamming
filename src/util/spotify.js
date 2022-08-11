@@ -1,4 +1,4 @@
-const clientId = process.env.REACT_APP_CLIENT_ID;
+const clientId = '39e5287132fc4ea3923b5157153754af';
 const redirectUri = 'https://jammming-tunes.netlify.app/';
 let accessToken = '';
 
