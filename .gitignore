@@ -25,5 +25,5 @@ yarn-error.log*
 # API KEYS
 .env
 
-# design document
-.docx
+
+
